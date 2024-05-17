@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Jessica Gera</title>
+  <link rel="stylesheet" href="./resources/stylesheet.css">
+
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h3>Jessica Gera</h3>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="centered" id="hello-tag">Hello!</h1>
+      <h3 class="centered">I'm Jessica Gera, a former educator turned front end software engineer.</h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="previouswork">
+    <h2 id="expertise">Previous Work</h2>
+    <br>
+    <div class="houseplant">
+      <h3>Houseplant.</h3>
+      <p>Houseplant is a webpage created using HTML and CSS as a model for a small busines selling houseplants and related goods. </p>
+      <img src="./Resources/Photos/Houseplant.jpeg" alt="Houseplant Webpage Image">
+    </div>
+    <br>
+    <div class="crochet">
+      <h3>Crochet Club</h3>
+      <p>Crochet club is a webpage for a local crochet club, created using HTML and CSS.</p>
+      <img src="./Resources/Photos/Crochet Club.png" alt="Crochet Club Webpage Image">
+    </div>
+  </div>
+
+  <!--<div class="container">
+    <h2 id="team">Meet Our Team.</h2>
+  </div>-->
+
+  <footer>
+    <h3>Contact</h3>
+    <p>
+      <a href="www.linkedin.com/in/jessicagera">LinkedIn</a>
+    </p>
+    <!--<p>Email</p>-->
+  </footer>
+  <script>
+    const hello = document.getElementById('hello-tag')
+    addEventListener("mouseover", (event) => {
+      console.log({event, })
+      if (event.target.id === 'hello-tag') {
+        hello.style.transition = 'all 1s ease-out'
+        hello.style.fontSize = '5rem'
+      } else {
+        hello.style.fontSize = '2rem'
+      }
+      }
+      );
+  </script>
+</body>
+</html>
+
